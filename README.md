@@ -5,7 +5,7 @@ Poison Ink
 
 This repo is implementation for the accepted paper "Poison Ink: Robust and Invisible Backdoor Attack" (IEEE Transactions on Image Processing (TIP)). [[PDF]](https://ieeexplore.ieee.org/iel7/83/9626658/09870671.pdf)
 
-<p align="center"> <img src="./poison_ink.png" width="50%">    </p>
+<p align="center"> <img src="./poison_ink.png" width="70%">    </p>
 <p align="center"> Figure 1: The overall pipeline of the proposed Poison Ink, which mainly consists of trigger image generation, backdoor model training and backdoor model attacking. </p>
 
 
