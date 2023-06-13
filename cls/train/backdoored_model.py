@@ -116,7 +116,7 @@ def main():
     args.checkpoint = args.checkpoint + "/" + args.remark + '_' + args.task + '_' + cur_time
     if not os.path.isdir(args.checkpoint):
         mkdir_p(args.checkpoint)
-    shutil.copy('./cifar_trigger.py', args.checkpoint)
+    shutil.copy('./backdoored_model.py', args.checkpoint)
 
 
     # Data
