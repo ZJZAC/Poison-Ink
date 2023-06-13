@@ -116,7 +116,7 @@ def main():
 
     if not os.path.isdir(args.checkpoint):
         mkdir_p(args.checkpoint)
-    shutil.copy('./cifar.py', args.checkpoint)
+    shutil.copy('./clean_model.py', args.checkpoint)
 
 
 
