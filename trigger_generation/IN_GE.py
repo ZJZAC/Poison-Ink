@@ -441,8 +441,9 @@ def train(train_loader, epoch, Hnet, Rnet, Dnet):
             vgg_loss = torch.tensor(0.0)
 
         if opt.adv:
-            errH = 10000 * (mse_loss(container_img, cover_imgv) + opt.betagan * (
-                    opt.betagans * gan_loss + opt.betapix * pixel_loss) + opt.betavgg * vgg_loss)
+            # errH = 10000 * (mse_loss(container_img, cover_imgv) + opt.betagan * (
+            #         opt.betagans * gan_loss + opt.betapix * pixel_loss) + opt.betavgg * vgg_loss)
+            errH = 10000 * (mse_loss(container_img, cover_imgv) + opt.betagan  * gan_loss)         
         elif opt.L1:
             errH = 10000 * criterion_pixelwise(container_img, cover_imgv)
         else:
